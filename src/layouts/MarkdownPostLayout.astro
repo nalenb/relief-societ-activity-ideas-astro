@@ -5,20 +5,32 @@ const { frontmatter } = Astro.props
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-  <p>{frontmatter.pubDate.slice(0, 10)}</p>
-  <p><em>{frontmatter.description}</em></p>
-  <p>Written by: {frontmatter.author}</p>
-  <img src={frontmatter.image.url} width='300' alt={frontmatter.image.alt} />
+  <section class='pt-12 flex flex-col items-center'>
+    <h1 class='text-3xl text-center tracking-widest'>{frontmatter.title}</h1>
+    <div class='pt-4'>
+      <img src={frontmatter.image.url} width='300' alt={frontmatter.image.alt} />
+    </div>
+    <p class='italic'>{frontmatter.description}</p>
+  </section>
 
-  <div>
-    {
-      frontmatter.tags.map((tag) => (
-        <p>
-          <a href={`/tags/${tag}`}>{tag}</a>
-        </p>
-      ))
-    }
-  </div>
+  <article class='pt-4 max-w-2xl mx-auto'>
+    <slot />
+  </article>
 
-  <slot />
+  <section class='pt-4'>
+    <div class='flex gap-4 justify-center'>
+      <p>{frontmatter.pubDate.slice(0, 10)}</p>
+      <p>Written by: {frontmatter.author}</p>
+    </div>
+    <div class='flex gap-4 justify-center pt-4'>
+      <p>Tagged In:</p>
+      {
+        frontmatter.tags.map((tag) => (
+          <p class='underline hover:text-lime-700'>
+            <a href={`/tags/${tag}`}>{tag}</a>
+          </p>
+        ))
+      }
+    </div>
+  </section>
 </BaseLayout>
