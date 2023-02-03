@@ -5,7 +5,7 @@ pubDate: 2023-01-29
 description: 'Heart and Flower Shaped Seed Paper'
 author: 'Christina'
 image:
-  url: '/posts/scripture-journal.jpeg'
+  url: '/posts/seed-paper.jpeg'
   alt: 'Uplifting messages'
 tags: ['Birthdays', 'Spring', 'Valentines']
 ---

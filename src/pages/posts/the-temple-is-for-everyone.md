@@ -5,12 +5,12 @@ pubDate: 2023-01-31
 description: 'Focus on the Temple'
 author: 'Christina'
 image:
-  url: '/posts/scripture-journal.jpeg'
+  url: '/posts/bentonville-temple.jpeg'
   alt: 'Temple'
 tags: ['Temple']
 ---
 
-Focus on the Temple
+# Focus on the Temple
 
 Recently, the Elders Quorum organized with Relief Society to have a regularly scheduled temple trip on the 3rd Thursday of each month. This is a great opportunity for all members!! I usually send out an email with the notice and reminder and suggest that there is a way for all to participate.
 
