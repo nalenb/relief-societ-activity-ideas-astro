@@ -1,14 +1,24 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-import BlogPost from '../components/BlogPost.astro'
-const allPosts = await Astro.glob('../pages/posts/*.md')
+import BlogPostCard from '../components/BlogPostCard.astro'
+const allPosts = (await Astro.glob('../pages/posts/*.md')).sort(
+  (a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
+)
 const pageTitle = 'Relief Society Activity Ideas'
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <h2>These are the articles</h2>
 
-  <ul>
-    {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
-  </ul>
+  <div class='grid grid-cols-3'>
+    {
+      allPosts.map((post) => (
+        <BlogPostCard
+          url={post.url}
+          title={post.frontmatter.title}
+          imageUrl={post.frontmatter.image.url}
+        />
+      ))
+    }
+  </div>
 </BaseLayout>

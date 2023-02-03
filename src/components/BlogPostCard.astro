@@ -1,0 +1,8 @@
+---
+const { url, title, imageUrl } = Astro.props
+---
+
+<div class='flex flex-col justify-start'>
+  <img src={imageUrl} alt={title} width='200' height='200' />
+  <a href={url}>{title}</a>
+</div>

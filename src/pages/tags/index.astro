@@ -7,10 +7,11 @@ const pageTitle = 'Tag Index'
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <div>
+  <h2 class='pt-6 text-center text-2xl'>Categories</h2>
+  <div class='grid grid-cols-3 pt-4 max-w-6xl mx-auto'>
     {
       tags.map((tag) => (
-        <p>
+        <p class='underline hover:text-lime-600'>
           <a href={`/tags/${tag}`}>{tag}</a>
         </p>
       ))
