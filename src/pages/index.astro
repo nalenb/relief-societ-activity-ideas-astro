@@ -4,6 +4,20 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 const pageTitle = 'Relief Society Activity Ideas'
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-  <h2>Ideas</h2>
+<BaseLayout pageTitle=''>
+  <section class='flex flex-col items-center gap-4 pt-12'>
+    <h2 class='font-bold'>Be Creative.</h2>
+    <h2 class='font-bold'>Get Involved. Share Your Talents.</h2>
+  </section>
+
+  <section class='pt-4'>
+    <blockquote>
+      <p>
+        “Creation brings deep satisfaction and fulfillment. We develop ourselves and others when we
+        take unorganized matter into our hands and mold it into something of beauty…”
+      </p>
+    </blockquote>
+    <figcaption>Dieter F. Uchtdorf</figcaption>
+    <cite>“Happiness, Your Heritage,” Nov. 2008 General Conference</cite>
+  </section>
 </BaseLayout>
