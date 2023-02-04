@@ -1,7 +1,6 @@
 backend:
   name: git-gateway
   branch: main
-publish_mode: editorial_workflow
 media_folder: '/public/posts'
 collections:
   - name: 'posts'
@@ -17,9 +16,25 @@ collections:
           default: '../../layouts/MarkdownPostLayout.astro',
         }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'pubDate', widget: 'datetime' }
+      - {
+          label: 'Publish Date',
+          name: 'pubDate',
+          widget: 'datetime',
+          date_format: 'MM-DD-YYYY',
+          format: 'YYYY-MM-DD',
+          time_format: false,
+        }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Author', name: 'author', widget: 'hidden', default: 'Christina' }
       - { label: 'Featured Image', name: 'image.url', widget: 'image' }
       - { label: 'Featured Image Label', name: 'image.alt', widget: 'string' }
+      - {
+          label: 'Categories',
+          name: 'tags',
+          widget: 'select',
+          multiple: true,
+          min: 1,
+          options: ['Birthdays', 'Christmas', 'Valentines', 'Scriptures'],
+          default: ['Scriptures'],
+        }
       - { label: 'Body', name: 'body', widget: 'markdown' }
