@@ -34,7 +34,19 @@ collections:
           widget: 'select',
           multiple: true,
           min: 1,
-          options: ['Birthdays', 'Christmas', 'Valentines', 'Scriptures'],
+          options:
+            [
+              'Birthdays',
+              'Christmas',
+              'Funerals',
+              'Get to Know You',
+              'Scriptures',
+              'Service and Charity',
+              'Spring',
+              'Super Saturday',
+              'Temple',
+              'Valentines',
+            ],
           default: ['Scriptures'],
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
