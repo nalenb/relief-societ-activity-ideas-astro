@@ -5,9 +5,21 @@ publish_mode: editorial_workflow
 media_folder: '/public/posts'
 collections:
   - name: 'posts'
-    label: 'Posts'
+    label: 'Post'
     folder: '/src/pages/posts'
     create: true
     slug: '{{slug}}'
     fields:
+      - {
+          label: 'Layout',
+          name: 'layout',
+          widget: 'hidden',
+          default: '../../layouts/MarkdownPostLayout.astro',
+        }
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'pubDate', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Author', name: 'author', widget: 'hidden', default: 'Christina' }
+      - { label: 'Featured Image', name: 'image.url', widget: 'image' }
+      - { label: 'Featured Image Label', name: 'image.alt', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
