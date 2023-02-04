@@ -4,9 +4,8 @@ title: 'Scripture Journal'
 pubDate: 2023-01-26
 description: 'Journaling Benefits Learning'
 author: 'Christina'
-image:
-  url: '/posts/scripture-journal.jpeg'
-  alt: 'Uplifting messages'
+image_url: '/posts/scripture-journal.jpeg'
+image_alt: 'Uplifting messages'
 tags: ['Scriptures']
 ---
 

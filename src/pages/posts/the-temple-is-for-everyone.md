@@ -4,9 +4,8 @@ title: 'The Temple Is For Everyone'
 pubDate: 2023-01-31
 description: 'Focus on the Temple'
 author: 'Christina'
-image:
-  url: '/posts/bentonville-temple.jpeg'
-  alt: 'Temple'
+image_url: '/posts/bentonville-temple.jpeg'
+image_alt: 'Temple'
 tags: ['Temple']
 ---
 

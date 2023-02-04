@@ -4,9 +4,8 @@ title: 'Seed Paper That Grows'
 pubDate: 2023-01-29
 description: 'Heart and Flower Shaped Seed Paper'
 author: 'Christina'
-image:
-  url: '/posts/seed-paper.jpeg'
-  alt: 'Uplifting messages'
+image_url: '/posts/seed-paper.jpeg'
+image_alt: 'Uplifting messages'
 tags: ['Birthdays', 'Spring', 'Valentines']
 ---
 

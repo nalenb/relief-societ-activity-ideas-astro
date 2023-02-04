@@ -26,8 +26,8 @@ collections:
         }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Author', name: 'author', widget: 'hidden', default: 'Christina' }
-      - { label: 'Featured Image', name: 'image.url', widget: 'image' }
-      - { label: 'Featured Image Label', name: 'image.alt', widget: 'string' }
+      - { label: 'Featured Image', name: 'image_url', widget: 'image' }
+      - { label: 'Featured Image Label', name: 'image_alt', widget: 'string' }
       - {
           label: 'Categories',
           name: 'tags',

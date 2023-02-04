@@ -4,9 +4,8 @@ title: 'Painted Rocks'
 pubDate: 2023-01-25
 description: 'Uplifting messages'
 author: 'Christina'
-image:
-  url: '/posts/painted-rocks.jpeg'
-  alt: 'Uplifting messages'
+image_url: '/posts/painted-rocks.jpeg'
+image_alt: 'Uplifting messages'
 tags: ['Birthdays', 'Scriptures', 'Service and Charity', 'Spring']
 ---
 

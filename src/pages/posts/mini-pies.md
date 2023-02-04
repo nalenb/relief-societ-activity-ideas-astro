@@ -4,9 +4,8 @@ title: 'Mini Pies'
 pubDate: 2023-01-27
 description: 'Mini Pies'
 author: 'Christina'
-image:
-  url: '/posts/mini-pies.jpeg'
-  alt: 'Mini Pie Press'
+image_url: '/posts/mini-pies.jpeg'
+image_alt: 'Mini Pie Press'
 tags: ['Birthdays', 'Christmas', 'Valentines']
 ---
 

@@ -4,9 +4,8 @@ title: 'Painted Scripture Rock'
 pubDate: 2023-01-23
 description: 'Painted Scripture Rock'
 author: 'Christina'
-image:
-  url: '/posts/scripture-rock.jpeg'
-  alt: 'Painted Scripture Rock'
+image_url: '/posts/scripture-rock.jpeg'
+image_alt: 'Painted Scripture Rock'
 tags: ['Birthdays', 'Spring', 'Scriptures']
 ---
 
