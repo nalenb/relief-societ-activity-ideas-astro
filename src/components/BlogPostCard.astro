@@ -10,7 +10,7 @@ const dateOptions: object = {
 const formattedPublishDate = new Date(date).toLocaleDateString('en-US', dateOptions)
 ---
 
-<div class='flex flex-col items-center border border-gray-200 shadow-lg p-2'>
+<article class='flex flex-col items-center border border-gray-200 shadow-lg p-2'>
   <div>
     <a href={url}>
       <img src={imageUrl} alt={title} width='300' height='300' />
@@ -22,4 +22,4 @@ const formattedPublishDate = new Date(date).toLocaleDateString('en-US', dateOpti
   <div>
     <a href={url} class='hover:text-lime-700'>{formattedPublishDate}</a>
   </div>
-</div>
+</article>
