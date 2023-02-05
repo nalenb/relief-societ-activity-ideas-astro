@@ -2,6 +2,14 @@
 import BaseLayout from './BaseLayout.astro'
 
 const { frontmatter } = Astro.props
+
+const dateOptions: object = {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+}
+
+const formattedPublishDate = new Date(frontmatter.pubDate).toLocaleDateString('en-US', dateOptions)
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
@@ -13,13 +21,13 @@ const { frontmatter } = Astro.props
     <p class='italic'>{frontmatter.description}</p>
   </section>
 
-  <article class='pt-4'>
+  <article class='pt-4 mx-auto max-w-2xl'>
     <slot />
   </article>
 
   <section class='pt-4'>
     <div class='flex gap-4 justify-center'>
-      <p>{frontmatter.pubDate.slice(0, 10)}</p>
+      <p>{formattedPublishDate}</p>
       <p>Written by: {frontmatter.author}</p>
     </div>
     <div class='flex gap-4 justify-center pt-4'>

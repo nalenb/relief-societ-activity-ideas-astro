@@ -2,7 +2,9 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 import BlogPostCard from '../components/BlogPostCard.astro'
 
-const featuredTag = 'Birthdays'
+const featuredTag = 'Valentines'
+const featuredTitle = '💝 Valentine Ideas 💝'
+
 const allPosts = (await Astro.glob('../pages/posts/*.md')).sort(
   (a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
 )
@@ -17,7 +19,7 @@ const pageTitle = 'Relief Society Activity Ideas'
     <h2 class='font-bold'>Get Involved &nbsp; &#127800; &nbsp; Share Your Talents</h2>
   </section>
 
-  <section class='pt-4'>
+  <section class='pt-4 max-w-2xl mx-auto'>
     <blockquote>
       <p>
         “Creation brings deep satisfaction and fulfillment. We develop ourselves and others when we
@@ -30,8 +32,8 @@ const pageTitle = 'Relief Society Activity Ideas'
     </div>
   </section>
 
-  <section class='pt-6'>
-    <h2 class='text-2xl text-center'>Featured Ideas</h2>
+  <section class='pt-24'>
+    <h2 class='text-2xl text-center font-bold tracking-widest'>{featuredTitle}</h2>
 
     <div class='grid grid-cols-3 pt-4 gap-8'>
       {
@@ -40,14 +42,15 @@ const pageTitle = 'Relief Society Activity Ideas'
             url={post.url}
             title={post.frontmatter.title}
             imageUrl={post.frontmatter.image_url}
+            date={post.frontmatter.pubDate}
           />
         ))
       }
     </div>
   </section>
 
-  <section class='pt-6'>
-    <h2 class='text-2xl text-center'>Recent Ideas</h2>
+  <section class='pt-24'>
+    <h2 class='text-2xl text-center font-bold tracking-widest'>~ &nbsp; Recent Ideas &nbsp; ~</h2>
 
     <div class='grid grid-cols-1 pt-4 md:grid-cols-3 gap-8'>
       {
@@ -58,6 +61,7 @@ const pageTitle = 'Relief Society Activity Ideas'
               url={post.url}
               title={post.frontmatter.title}
               imageUrl={post.frontmatter.image_url}
+              date={post.frontmatter.pubDate}
             />
           ))
       }

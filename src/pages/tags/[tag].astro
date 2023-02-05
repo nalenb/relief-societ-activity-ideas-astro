@@ -34,6 +34,7 @@ const { posts } = Astro.props
           url={post.url}
           title={post.frontmatter.title}
           imageUrl={post.frontmatter.image_url}
+          date={post.frontmatter.pubDate}
         />
       ))
     }

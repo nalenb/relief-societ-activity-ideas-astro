@@ -1,14 +1,25 @@
 ---
-const { url, title, imageUrl } = Astro.props
+const { url, title, imageUrl, date } = Astro.props
+
+const dateOptions: object = {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+}
+
+const formattedPublishDate = new Date(date).toLocaleDateString('en-US', dateOptions)
 ---
 
 <div class='flex flex-col items-center border border-gray-200 shadow-lg p-2'>
   <div>
     <a href={url}>
-      <img src={imageUrl} alt={title} width='200' height='200' />
+      <img src={imageUrl} alt={title} width='300' height='300' />
     </a>
   </div>
   <div>
-    <a href={url}>{title}</a>
+    <a href={url} class='hover:text-lime-700'>{title}</a>
+  </div>
+  <div>
+    <a href={url} class='hover:text-lime-700'>{formattedPublishDate}</a>
   </div>
 </div>

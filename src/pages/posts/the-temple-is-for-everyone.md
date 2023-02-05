@@ -2,26 +2,32 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'The Temple Is For Everyone'
 pubDate: 2023-01-31
-description: 'Focus on the Temple'
+description: 'Bentonville, Arkansas Temple'
 author: 'Christina'
 image_url: '/posts/bentonville-temple.jpeg'
 image_alt: 'Temple'
 tags: ['Temple']
 ---
 
-# Focus on the Temple
+<div class='pb-4'>
+    Recently, the Elders Quorum organized with Relief Society to have a regularly scheduled temple trip on the 3rd Thursday of each month. This is a great opportunity for all members!! I usually send out an email with the notice and reminder that there is a way for all to participate.
+</div>
 
-Recently, the Elders Quorum organized with Relief Society to have a regularly scheduled temple trip on the 3rd Thursday of each month. This is a great opportunity for all members!! I usually send out an email with the notice and reminder and suggest that there is a way for all to participate.
+<div class='pb-4'>
+    The wording can go something like this ...
+</div>
 
-The wording can go something like this ...
-
+<div class='text-center pb-4'>
 Hello Sisters!
-
+<br />
 Focus on the Temple This Thursday
-
-🗃 However you are able 👞👡
+<br />
+👡 However you are able 👞
+<br />
 We have a temple trip that the Elders Quorum has planned for us all! Yay!
+<br />
 7:15 pm Endowment Session
+</div>
 
 Meet there for the session OR
 
